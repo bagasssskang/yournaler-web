@@ -69,7 +69,7 @@
   <main class="bg-white text-black min-h-screen">
     <!-- Navbar -->
     <nav class="flex items-center justify-between px-6 py-4 shadow border-b">
-      <div class="text-3xl font-bold">FORTUNE</div>
+      <div class="text-3xl font-bold">MPN</div>
       <ul class="flex space-x-4 text-sm font-medium">
         <li><a href="#" class="hover:text-red-600">News</a></li>
         <li><a href="#" class="hover:text-red-600">Finance</a></li>
