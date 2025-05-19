@@ -1,128 +1,143 @@
 <script>
-    let hotNews = {
-      title: "NASA Discovers New Earth-Like Planet",
-      description: "The newly discovered planet lies within the habitable zone and could contain liquid water.",
-      image: "https://images.unsplash.com/photo-1581090700227-1e8d738fd1b9?auto=format&fit=crop&w=600&q=80"
-    };
-  
-    let headlines = [
-      {
-        title: "Tech Giants Invest Billions in Quantum Computing",
-        subtitle: "Major players like Google and IBM double down on quantum technologies.",
-        image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=600&q=80"
+  import { goto } from '$app/navigation';
+
+  const today = new Date().toLocaleDateString('id-ID', {
+    weekday: 'long',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+
+  let headlines = [
+    {
+        title: "Ma’had Nurul Huda MAN 2 Kota Probolinggo Gelar Kegiatan Briyani (Berbagi Kebaikan di Bulan Suci Ramadhan) Vol. 2",
+        subtitle: "MandaProExist – Ma’had Nurul Huda MAN 2 Kota Probolinggo kembali menggelar kegiatan Briyani (Berbagi Kebaikan di Bulan Suci Ramadhan) Vol. 2 pada hari Minggu, 16 Maret 2025, bertempat di Aula MAN 2 Kota Probolinggo. Kegiatan ini diadakan untuk memperingati Nuzulul Quran serta meningkatkan kepedulian sosial di bulan suci Ramadhan.",
+        image: "article/briyani.jpeg"
       },
       {
-        title: "Global Markets Surge After Positive Jobs Report",
-        subtitle: "Stock markets around the world rallied after strong economic data was released.",
-        image: "https://images.unsplash.com/photo-1542228262-3d663b3063d7?auto=format&fit=crop&w=600&q=80"
+        title: "Tasyakuran Purna Studi MAN 2 Kota Probolinggo, 398 Siswa Resmi Dikukuhkan Sebagai Alumni",
+        subtitle: "Probolinggo, 8 Mei 2025 – Sebanyak 398 siswa kelas 12 MAN 2 Kota Probolinggo resmi dikukuhkan sebagai alumni dalam acara Tasyakuran Purna Studi yang berlangsung khidmat dan meriah di Paseban Sena pada Kamis, 8 Mei 2025.",
+        image: "article/headline.jpeg"
       },
       {
-        title: "Breakthrough in Renewable Energy Storage",
-        subtitle: "Scientists develop a new battery technology to store solar power more efficiently.",
-        image: "https://images.unsplash.com/photo-1509395176047-4a66953fd231?auto=format&fit=crop&w=600&q=80"
+        title: "MAN 2 Kota Probolinggo Gelar Yudisium Kelas 12",
+        subtitle: "Probolinggo, 7 Mei 2025 – Suasana haru dan khidmat menyelimuti Aula Mandapro Exist pada Rabu (7/5), saat MAN 2 Kota Probolinggo menyelenggarakan Yudisium bagi siswa-siswi kelas 12 tahun ajaran 2024/2025.",
+        image: "article/yudisium.jpeg"
       },
       {
-        title: "AI Outperforms Doctors in Diagnosing Skin Cancer",
-        subtitle: "New study shows AI systems surpass human dermatologists in accuracy.",
-        image: "https://images.unsplash.com/photo-1588776814546-ec7aa9f108f4?auto=format&fit=crop&w=600&q=80"
+        title: "Peringatan Hardiknas di MAN 2 Kota Probolinggo",
+        subtitle: "robolinggo, 2 Mei 2025 — Dalam rangka memperingati Hari Pendidikan Nasional, MAN 2 Kota Probolinggo menggelar upacara bendera yang berlangsung pada Jumat pagi, 2 Mei 2025, di lapangan upacara madrasah.",
+        image: "article/gelar.jpg"
       },
       {
-        title: "World Leaders Meet to Discuss Climate Strategy",
-        subtitle: "The summit in Geneva aims to outline binding emission targets.",
-        image: "https://images.unsplash.com/photo-1530031686560-dc6c8763b3a1?auto=format&fit=crop&w=600&q=80"
+        title: "MandaPro Exist Meriahkan Hari Kartini 2025 dengan Lomba Catwalk dan Cerdas Cermat",
+        subtitle: "MandaProExist — Dalam rangka memperingati Hari Kartini, OSIM MAN 2 Kota Probolinggo menggelar serangkaian kegiatan yang penuh semangat dan nuansa budaya. Acara yang berlangsung pada Rabu, 23 April 2025 ini diisi dengan lomba catwalk dan cerdas cermat yang diikuti oleh seluruh perwakilan kelas X dan XI bertempat dihalaman MandaPro Exist.",
+        image: "article/catwalk.jpeg"
       },
       {
-        title: "Innovative Startups Lead Tech Expo 2025",
-        subtitle: "Small companies showcased bold ideas at the annual tech event.",
-        image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=600&q=80"
+        title: "Siswa MAN 2 MandaPro Exist Raih Best Presentation di Lomba Silver Paper 2024",
+        subtitle: "MandaProExist– Dua siswa berprestasi dari MAN 2 Kota Probolinggo atas nama M. Khauzaky Amkanay (SKS) dan Hilmi Zaki Mumtaz (SKS), berhasil meraih penghargaan Best Presentation dalam ajang lomba Silver Paper 2024 yang diselenggarakan oleh Departemen Teknik Material dan Metalurgi Institut Teknologi Sepuluh Nopember (ITS) Surabaya.",
+        image: "article/silver.jpg"
       },
       {
-        title: "New Legislation Aims to Protect User Data",
-        subtitle: "The digital privacy act could reshape how tech firms collect data.",
-        image: "https://images.unsplash.com/photo-1556742031-c6961e8560b0?auto=format&fit=crop&w=600&q=80"
+        title: "Dua Siswa MAN 2 Kota Probolinggo Raih Medali di Olimpiade Sains Airlangga 2025",
+        subtitle: "MandaProExist – Jaudah Dahlia Saldi (XII IPS 1) meraih medali perak Soshum, dan Muhammad Razaan Zafran (XI IPA 6) meraih medali perunggu Sains Teknologi dalam Olimpiade Sains Airlangga (OSA) 2024 di Universitas Airlangga, Surabaya, 14-15 Desember 2024. Prestasi ini membanggakan mereka dan MAN 2 Kota Probolinggo.",
+        image: "article/razan.jpg"
       },
       {
-        title: "Mars Mission Test Flight Deemed a Success",
-        subtitle: "Space agency reports all objectives met during trial run.",
-        image: "https://images.unsplash.com/photo-1606481209984-720db5ef5ab1?auto=format&fit=crop&w=600&q=80"
+        title: "Tim Procommit MandaPro Exist V.14 Panen Juara di ITS Surabaya Tahun 2024",
+        subtitle: "MandaProExist – Tim Procommit MAN 2 Kota Probolinggo kembaliq mengukir prestasi gemilang dalam ajang kompetisi yang diselenggarakan oleh ITS (Institut Teknologi Sepuluh Nopember) Surabaya pada Sabtu, 23 November 2024. ",
+        image: "article/procommit.jpg"
       },
       {
-        title: "Scientists Find Possible Cure for Rare Disease",
-        subtitle: "Early trials show encouraging results using gene therapy.",
-        image: "https://images.unsplash.com/photo-1588776814661-5f622f0cae23?auto=format&fit=crop&w=600&q=80"
+        title: "Halal Bihalal Warnai Hari Pertama Pembelajaran di MAN 2 Kota Probolinggo",
+        subtitle: "MandaProExist — Mengawali kegiatan pembelajaran setelah libur Hari Raya Idulfitri 1446 H, seluruh warga MAN 2 Kota Probolinggo menggelar kegiatan Halal Bihalal yang penuh kehangatan dan kebersamaan, Rabu (9/4).",
+        image: "article/bihalal.jpeg"
       },
       {
-        title: "Electric Vehicle Sales Hit New Record",
+        title: "UKHUWAH, ILMU, AKSI (KEMAH DAKWAH LINGKUNGAN MAXIST 2025)d",
         subtitle: "EV market continues to grow as demand spikes globally.",
-        image: "https://images.unsplash.com/photo-1583267740902-b0fdf3f9edc5?auto=format&fit=crop&w=600&q=80"
-      },
-      // Tambahkan lebih banyak jika diperlukan
-    ];
-  
-    let currentPage = 1;
-    let itemsPerPage = 6;
-    let totalPages = Math.ceil(headlines.length / itemsPerPage);
-  
-    $: paginatedHeadlines = headlines.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
-  </script>
-  
-  <main class="bg-white text-black min-h-screen">
-    <!-- Navbar -->
-    <nav class="flex items-center justify-between px-6 py-4 shadow border-b">
-      <div class="text-3xl font-bold">MPN</div>
-      <ul class="flex space-x-4 text-sm font-medium">
-        <li><a href="#" class="hover:text-red-600">News</a></li>
-        <li><a href="#" class="hover:text-red-600">Finance</a></li>
-        <li><a href="#" class="hover:text-red-600">Tech</a></li>
-        <li><a href="#" class="hover:text-red-600">Leadership</a></li>
-      </ul>
-    </nav>
-  
-    <!-- Top Layout: Hot News + Headline -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 py-8">
-      <div class="md:col-span-1 bg-gradient-to-r from-red-400 to-pink-300 text-white p-4 rounded-xl shadow">
-        <img src={hotNews.image} alt={hotNews.title} class="w-full h-40 object-cover rounded mb-4">
-        <h2 class="text-lg font-bold mb-2">{hotNews.title}</h2>
-        <p class="text-sm">{hotNews.description}</p>
+        image: "article/kemah.jpg"
+      },{
+      title: "Tasyakuran Purna Studi MAN 2 Kota Probolinggo, 398 Siswa Resmi Dikukuhkan Sebagai Alumni",
+    subtitle: "Probolinggo, 8 Mei 2025 – Sebanyak 398 siswa kelas 12 MAN 2 Kota Probolinggo resmi dikukuhkan sebagai alumni...",
+    image: "/article/headline.jpeg"}
+  ];
+
+  function goToDetail(headline) {
+    const slug = slugify(headline.title);
+    goto(`/berita/${slug}`, { state: { headline } });
+  }
+
+  function slugify(text) {
+    return text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
+  }
+</script>
+
+<style>
+  :global(body) {
+    background-color: #f9fafb;
+  }
+</style>
+
+<header class="sticky top-0 z-50 bg-white shadow-sm border-b border-gray-200">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+
+      <!-- Tanggal -->
+      <div class="text-sm text-gray-600 font-medium">
+        {today}
       </div>
-  
-      <div class="md:col-span-2 flex flex-col justify-center bg-blue-50 p-6 rounded-xl shadow">
-        <h1 class="text-2xl font-bold mb-4 text-blue-800">{headlines[0].title}</h1>
-        <p class="text-gray-700 text-md">{headlines[0].subtitle}</p>
+
+      <!-- Nama Website -->
+      <div class="text-xl font-serif font-bold tracking-wide text-gray-800">
+        Yournaler
       </div>
-    </section>
-  
-    <!-- Segmented News -->
-    <section class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 pb-10">
-      {#each paginatedHeadlines as headline}
-        <div class="rounded-xl overflow-hidden shadow-lg border border-gray-200 bg-gradient-to-br from-white via-blue-100 to-purple-100">
-          <img src={headline.image} alt={headline.title} class="w-full h-40 object-cover">
-          <div class="p-4">
-            <h3 class="text-lg font-semibold mb-2 text-purple-800">{headline.title}</h3>
-            <p class="text-sm text-gray-700">{headline.subtitle}</p>
-          </div>
-        </div>
-      {/each}
-    </section>
-  
-    <!-- Pagination -->
-    <div class="flex justify-center items-center space-x-2 pb-10">
-      {#each Array(totalPages).fill(0).map((_, i) => i + 1) as page}
-        <button on:click={() => currentPage = page} class="px-3 py-1 rounded-full text-sm font-semibold border border-gray-300 hover:bg-gray-200 transition-colors {page === currentPage ? 'bg-blue-600 text-white' : 'bg-white'}">
-          {page}
+
+      <!-- Icon Search -->
+      <div>
+        <button class="text-gray-500 hover:text-black transition">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+               viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1016.65 16.65z" />
+          </svg>
         </button>
-      {/each}
+      </div>
+
     </div>
-  
-    <!-- Footer -->
-    <footer class="bg-gray-100 text-gray-600 text-sm px-6 py-4 text-center">
-      &copy; 2025 Fortune Clone. All rights reserved.
-    </footer>
-  </main>
-  
-  <style>
-    main {
-      font-family: 'Inter', sans-serif;
-    }
-  </style>
-  
+  </div>
+</header>
+
+<main class="p-6 max-w-7xl mx-auto space-y-6">
+  <h1 class="text-3xl md:text-4xl font-extrabold text-gray-800">Headline Berita</h1>
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+    {#each headlines as headline}
+      <div
+        class="group border rounded-2xl overflow-hidden shadow-lg bg-white hover:shadow-indigo-200 transition-all duration-300 transform hover:-translate-y-1 cursor-pointer"
+        on:click={() => goToDetail(headline)}
+      >
+        <div class="relative">
+          <img
+            src={headline.image}
+            alt={headline.title}
+            class="w-full h-44 object-cover group-hover:scale-105 transition-transform duration-300"
+            on:error={(e) => e.target.src = '/fallback.jpg'}
+          />
+          <!-- Badge tanggal/kategori -->
+          <span class="absolute top-2 left-2 bg-indigo-500 text-white text-xs px-2 py-0.5 rounded-full shadow">
+            {headline.date || 'Berita'}
+          </span>
+        </div>
+
+        <div class="p-4 space-y-2">
+          <h2 class="text-lg font-semibold text-gray-900 line-clamp-2">{headline.title}</h2>
+          <p class="text-sm text-gray-600 line-clamp-2">{headline.subtitle}</p>
+        </div>
+      </div>
+    {/each}
+  </div>
+</main>
+
+      
