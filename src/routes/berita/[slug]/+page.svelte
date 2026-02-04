@@ -48,7 +48,7 @@
       <p><strong>Probolinggo, 7 Mei 2025</strong> – Suasana haru dan khidmat menyelimuti Aula Mandapro Exist pada Rabu (7/5), saat MAN 2 Kota Probolinggo menyelenggarakan Yudisium bagi siswa-siswi kelas 12 tahun ajaran 2024/2025. Acara ini dihadiri oleh seluruh peserta yudisium, para Pembimbing Akademik (PA), jajaran Wakil Kepala Madrasah, serta Kepala MAN 2 Kota Probolinggo, Bapak M. Alfan Makmur, M.M.</p>
       <p>Rangkaian acara dimulai dengan pembukaan, dilanjutkan dengan menyanyikan lagu kebangsaan Indonesia Raya dan Mars Madrasah. Dalam suasana penuh kebanggaan, Kepala Madrasah memberikan sambutan yang menekankan pentingnya menjaga nilai-nilai akhlak dan integritas saat melangkah ke jenjang selanjutnya.</p>
       <p>Momen yang paling dinanti adalah pembacaan Surat Keputusan (SK) Penetapan Kelulusan oleh Kepala Madrasah. Dengan suara lantang dan penuh makna, dinyatakan bahwa seluruh peserta yudisium dinyatakan lulus. Tak lama kemudian, dilakukan pengukuhan alumni secara simbolis, menandai transisi resmi para siswa dari status pelajar menjadi alumni MAN 2 Kota Probolinggo.</p>
-      <pAcara semakin emosional ketika salah satu perwakilan alumni menyampaikan pesan dan kesan. Ia menyampaikan terima kasih kepada guru-guru atas bimbingan dan dedikasi yang telah diberikan selama tiga tahun masa pendidikan.</p>
+      <p>Acara semakin emosional ketika salah satu perwakilan alumni menyampaikan pesan dan kesan. Ia menyampaikan terima kasih kepada guru-guru atas bimbingan dan dedikasi yang telah diberikan selama tiga tahun masa pendidikan.</p>
       <p>Setelah seluruh rangkaian acara yudisium selesai, para siswa diarahkan ke kelas masing-masing untuk menerima rapor kelulusan sebagai penutup kegiatan hari itu.</p>
       <p>Kegiatan yudisium ini menjadi titik akhir dari perjuangan panjang para siswa di bangku madrasah, sekaligus awal dari perjalanan baru untuk menapaki masa depan yang lebih gemilang.</p>    `
     },
@@ -205,7 +205,7 @@
 
   <!-- Tanggal -->
   <p class="text-sm text-indigo-600 uppercase tracking-wide font-semibold mb-2">
-    {headline.date}
+    {headline.date || 'Berita'}
   </p>
 
   <!-- Judul -->
