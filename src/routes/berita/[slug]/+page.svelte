@@ -166,13 +166,13 @@
       title: "Siswa MAN 2 Kota Probolinggo Raih Juara 3 Kelas C Dewasa",
       subtitle: "EV market continues to grow as demand spikes globally.",
       image: "/article/bagas.jpeg",
-      content: `MandaProExist — Prestasi membanggakan kembali ditorehkan oleh siswa MAN 2 Kota Probolinggo, Muhammad Bagas Prastya, kelas XII-B2. Bagas berhasil meraih Juara 3 dalam kategori Dewasa Prestasi Putra Kelas C pada Open Tournament Piala Panglima TNI tahun 2025.<br>
+      content: `<p>MandaProExist — Prestasi membanggakan kembali ditorehkan oleh siswa MAN 2 Kota Probolinggo, Muhammad Bagas Prastya, kelas XII-B2. Bagas berhasil meraih Juara 3 dalam kategori Dewasa Prestasi Putra Kelas C pada Open Tournament Piala Panglima TNI tahun 2025.</p><br>
 
-      Turnamen bergengsi yang diikuti oleh berbagai atlet dari seluruh Indonesia ini menjadi ajang pembuktian kemampuan Bagas di bidangnya. Dengan kerja keras dan dedikasi tinggi, Bagas mampu bersaing dan menampilkan performa terbaiknya hingga akhirnya meraih posisi ketiga.<br>
+      <p>Turnamen bergengsi yang diikuti oleh berbagai atlet dari seluruh Indonesia ini menjadi ajang pembuktian kemampuan Bagas di bidangnya. Dengan kerja keras dan dedikasi tinggi, Bagas mampu bersaing dan menampilkan performa terbaiknya hingga akhirnya meraih posisi ketiga.</p><br>
 
-      Kepala MAN 2 Kota Probolinggo menyampaikan rasa bangga atas pencapaian Bagas, sekaligus berharap prestasi ini bisa memotivasi siswa lainnya untuk terus berprestasi, baik di bidang akademik maupun non-akademik.<br>
+      <p>Kepala MAN 2 Kota Probolinggo menyampaikan rasa bangga atas pencapaian Bagas, sekaligus berharap prestasi ini bisa memotivasi siswa lainnya untuk terus berprestasi, baik di bidang akademik maupun non-akademik.</p><br>
 
-      Prestasi ini tidak hanya menjadi kebanggaan bagi Bagas dan keluarga, tetapi juga membawa harum nama MAN 2 Kota Probolinggo di tingkat nasional.`
+      <p>Prestasi ini tidak hanya menjadi kebanggaan bagi Bagas dan keluarga, tetapi juga membawa harum nama MAN 2 Kota Probolinggo di tingkat nasional.</p>`
     },
   ];
   $: slug = $page.url.pathname.split('/').pop();
