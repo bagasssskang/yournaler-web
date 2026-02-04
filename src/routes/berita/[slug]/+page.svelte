@@ -149,17 +149,18 @@
       subtitle: "EV market continues to grow as demand spikes globally.",
       image: "/article/kemah.jpg",
       content: `
-      <p>MandaProExist-Kemah Dakwah Lingkungan 2025 kembali digelar pada 10 hari terakhir Romadhon  oleh Kader Lingkungan Adiwiyata MANDAPRO bekerjasama dengan Remaja Masjid (Remas) dan Pecinta Alam (Mandapala). Dengan mengusung tema Ukhuwah, Ilmu dan Aksi, Kemah Dakwah diselenggarakan di Masjid Al Ikhlas, masjid Al Madinah, 3 mushola yakni Roudatul Ma’sum, An Nur dan Al Amin. Sejumlah 95 siswa dan 7 guru pendamping mensukseskan kegiatan kemah dakwah.</p>
+      <p>MandaProExist-Kemah Dakwah Lingkungan 2025 kembali digelar pada 10 hari terakhir Romadhon oleh Kader Lingkungan Adiwiyata MANDAPRO bekerjasama dengan Remaja Masjid (Remas) dan Pecinta Alam (Mandapala). Dengan mengusung tema Ukhuwah, Ilmu dan Aksi, Kemah Dakwah diselenggarakan di Masjid Al Ikhlas, masjid Al Madinah, 3 mushola yakni Roudatul Ma’sum, An Nur dan Al Amin. Sejumlah 95 siswa dan 7 guru pendamping mensukseskan kegiatan kemah dakwah.</p>
       <br>
       <p>Dalam sambutan pemberangkatan Kemah Dakwah, KAMAD MAN 2 berpesan siswa dapat mengimplementasikan pengetahuan Al Qur’an Hadits, Fiqih, Aqidah Akhlak ke Masyarakat dan santri-santri Taman Pendidikan Al Qur’an (TPQ), berbaur dengan masyarakat dalam ibadah maupun kehidupan sehari-hari. Sejumlah 10-15 siswa menempati masing-masig masjid dan mushola yang ditentukan.</p>
       <br>
-      <p>Pembagian zakat fitrah mengawali kolaborasi peserta Kemah dengan Amil setempat. Sejumlah 150  paket disalurkan ke warga sekitar masjid Al Madinah di jalan Supriyadi  kelurahan Kanigaran (21 paket), Masjid Al Ikhlas kelurahan Pilang (55 paket) dan 74 paket di 3 mushola An Nur, Roudhatul Ma’sum (kelurahan Pilang) dan mushola Al Amin di Perumahan Bromo kelurahan Ketapang. Selain kepada dhuafa, zakat juga tersampaikan kepada fi sabilillah, guru TPQ, muadzin, marbot. Siswa tidak sekedar tahu mengumpulkan zakat fitrah ke panitia zakat namun menyerahkan sendiri dengan kedua tangannya (hands on activity) ke warga yang berhak menerima zakat.</p>
+      <p>Pembagian zakat fitrah mengawali kolaborasi peserta Kemah dengan Amil setempat. Sejumlah 150 paket disalurkan ke warga sekitar masjid Al Madinah di jalan Supriyadi kelurahan Kanigaran (21 paket), Masjid Al Ikhlas kelurahan Pilang (55 paket) dan 74 paket di 3 mushola An Nur, Roudhatul Ma’sum (kelurahan Pilang) dan mushola Al Amin di Perumahan Bromo kelurahan Ketapang. Selain kepada dhuafa, zakat juga tersampaikan kepada fi sabilillah, guru TPQ, muadzin, marbot. Siswa tidak sekedar tahu mengumpulkan zakat fitrah ke panitia zakat namun menyerahkan sendiri dengan kedua tangannya (hands on activity) ke warga yang berhak menerima zakat.</p>
       <br>
-      <p> Santri-santri TPQ sangat antusias berinteraksi dengan siswa MAN 2 dengan belajar kisah-kisah Islami yang inspiratif, games edukasi Islami (nama Nabi), Hafalan surat-surat pendek, doa-doa harian. Pertemuan singkat nampaknya menjadi Kesan mendalam bagi peserta Kemah maupun para santri. Dengan polosnya santri-santri menyampaikan: “besok ngaji lagi bersama kakak?” sambil bergelayutan atau duduk di pangkuan kakak MAN 2.</p>
+      <p>Santri-santri TPQ sangat antusias berinteraksi dengan siswa MAN 2 dengan belajar kisah-kisah Islami yang inspiratif, games edukasi Islami (nama Nabi), Hafalan surat-surat pendek, doa-doa harian. Pertemuan singkat nampaknya menjadi Kesan mendalam bagi peserta Kemah maupun para santri. Dengan polosnya santri-santri menyampaikan: “besok ngaji lagi bersama kakak?” sambil bergelayutan atau duduk di pangkuan kakak MAN 2.</p>
       <br>
-      <p>Siswa putra diserahi dipercaya untuk menjadi   Muadzin/ Bilal dan Imam sholat fardhu dan sholat taraweh bergantian dengan guru pendamping (Ustadz Hafidz, Ustadz Burhan). Tidak ada keraguan dalam bacaan maupun gestur meski berhadapan dengan Masyarakat umum. Tadarus ada yang diawali selesai sholat Asar (mushola Al Amin dan masjid Al Ikhlas), selebihnya selepas tarawih. Rata-rata   5 juz disuarakan bergantian siswa-siswi Bersama jamaah masjid/mushola. Bahkan selepas saur dan sholat subuh masih dilanjutkan tadarus, di mushola Al Amin menyesaikan 13 juz sampai khatam.</p>
+      <p>Siswa putra diserahi dipercaya untuk menjadi Muadzin/ Bilal dan Imam sholat fardhu dan sholat taraweh bergantian dengan guru pendamping (Ustadz Hafidz, Ustadz Burhan). Tidak ada keraguan dalam bacaan maupun gestur meski berhadapan dengan Masyarakat umum. Tadarus ada yang diawali selesai sholat Asar (mushola Al Amin dan masjid Al Ikhlas), selebihnya selepas tarawih. Rata-rata 5 juz disuarakan bergantian siswa-siswi Bersama jamaah masjid/mushola. Bahkan selepas saur dan sholat subuh masih dilanjutkan tadarus, di mushola Al Amin menyesaikan 13 juz sampai khatam.</p>
       <br>
-      <p>Tambahkan HTML apapun di sini seperti <strong>teks tebal</strong>, <em>teks miring</em>, dan lain-lain.</p>    `
+      <p>Tambahkan HTML apapun di sini seperti <strong>teks tebal</strong>, <em>teks miring</em>, dan lain-lain.</p>
+    `
     },
     {
       title: "Siswa MAN 2 Kota Probolinggo Raih Juara 3 Kelas C Dewasa",
@@ -177,6 +178,9 @@
   $: slug = $page.url.pathname.split('/').pop();
 
   $: headline = headlines.find(h => slugify(h.title) === slug);
+
+  // Helper: safe headline rendering
+  $: safeHeadline = headline || { title: '', subtitle: '', image: '', content: '' };
 
   function slugify(text) {
     return text.toLowerCase().replace(/\s+/g, '-').replace(/[^\w-]+/g, '');
@@ -200,17 +204,17 @@
 
   <!-- Gambar -->
   <div class="rounded-xl overflow-hidden shadow-md mb-6">
-    <img src={headline.image} alt={headline.title} class="w-full h-72 object-cover" on:error={(e) => e.target.src = '/fallback.jpg'} />
+    <img src={safeHeadline.image} alt={safeHeadline.title} class="w-full h-72 object-cover" on:error={(e) => { if(e.target && e.target instanceof HTMLImageElement) e.target.src = '/fallback.jpg'; }} />
   </div>
 
   <!-- Tanggal -->
   <p class="text-sm text-indigo-600 uppercase tracking-wide font-semibold mb-2">
-    {headline.date || 'Berita'}
+    {'date' in safeHeadline && safeHeadline.date ? safeHeadline.date : 'Berita'}
   </p>
 
   <!-- Judul -->
   <h1 class="text-4xl font-extrabold text-gray-900 mb-4 leading-tight">
-    {headline.title}
+    {safeHeadline.title}
   </h1>
 
   <!-- Divider -->
@@ -218,7 +222,7 @@
 
   <!-- Konten -->
   <div class="text-lg text-gray-700 space-y-5 leading-relaxed">
-    {@html headline.content}
+    {@html safeHeadline.content}
   </div>
 </main>
 
