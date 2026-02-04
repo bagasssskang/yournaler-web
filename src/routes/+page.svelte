@@ -62,6 +62,10 @@
       title: "Tasyakuran Purna Studi MAN 2 Kota Probolinggo, 398 Siswa Resmi Dikukuhkan Sebagai Alumni",
     subtitle: "Probolinggo, 8 Mei 2025 – Sebanyak 398 siswa kelas 12 MAN 2 Kota Probolinggo resmi dikukuhkan sebagai alumni...",
     image: "/article/headline.jpeg"}
+    ,{
+      title: "Siswa MAN 2 Kota Probolinggo Raih Juara 3 Kelas C Dewasa",
+      subtitle: "EV market continues to grow as demand spikes globally.",
+      image: "/article/bagas.jpeg",}
   ];
 
   function goToDetail(headline) {
